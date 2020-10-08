@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('content')
     @if(Session::has('message'))

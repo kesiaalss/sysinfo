@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('content')
 
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="box">
+    <!-- <div class="box">
         <form role="form" method="get" action="produto/filter" >
         <div class="box-body with-border">
             <h3>Filtro</h3>
@@ -74,7 +74,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
         </form>
-    </div>
+    </div> -->
     <div class="box">
         <div class="box-body"></div>
         <div class="box-body">

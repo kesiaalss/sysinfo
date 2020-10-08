@@ -1,15 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: joaopaulooliveirasantos
- * Date: 2019-04-07
- * Time: 23:56
- *
- * composer dump-autoload
- * composer clear-cache
- */
-
 namespace App\Http\Controllers;
 
 

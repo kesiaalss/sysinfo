@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('css')
     <style>
@@ -134,7 +134,7 @@
     <script>
         function findEndereco() {
             let cep = $('#cep').val();
-            cep = cep.replaceAll(/\W/,'');
+            cep = cep.replaceAll(/\W/g,'');
             $.getJSON(`https://viacep.com.br/ws/${cep}/json/`,function (endereco) {
               if (endereco.erro){
                   alert('CEP INVALIDO');

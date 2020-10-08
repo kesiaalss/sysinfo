@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Lano\'s Informatica')
+@section('title', 'Sysinfo')
 
 
 @section('content')

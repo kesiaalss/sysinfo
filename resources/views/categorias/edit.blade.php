@@ -1,9 +1,9 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('content')
 
-<h2>Update Categorias</h2>
+<h2>Editar Categorias</h2>
 <form role="form" method="post" action="/categorias/edit    " enctype="multipart/form-data">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <input type="hidden" value="<?php echo $Categorias->id ?>"   name="Categorias_id">

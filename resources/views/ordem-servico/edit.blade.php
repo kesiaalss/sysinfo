@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('content')
 
@@ -14,7 +14,7 @@
             src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 
     <div class="box">
-        <div class="box-header"><h2>Update OrdemServico</h2></div>
+        <div class="box-header"><h2>Editar OrdemServico</h2></div>
         <div class="box-body">
             <form id="editar" role="form" method="post" action="/ordem-servico/edit" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">

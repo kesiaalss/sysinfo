@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: joaopaulooliveirasantos
- * Date: 2019-04-07
- * Time: 22:43
- */
-
 namespace App\Http\Controllers;
 
 
@@ -66,12 +59,14 @@ class ProdutoController extends Controller {
         $Produto->delete();
         return redirect('produto')->with('message', 'Produto deleted successfully.');
     }
+
     public function edit($id)
     {
         $data['Produto']=Produto::find($id);
         $data['Categorias'] = Categoria::all();
         return view('produto/edit',$data);
     }
+
     public function editPost(Request $request)
     {
 
@@ -86,7 +81,7 @@ class ProdutoController extends Controller {
 
         $Produto_data = array(
             'quantidade' => Input::get('quantidade'),
-            'valor' => str_replace(",",".",Input::get('valor')),
+            'valor' => str_replace(",",".",str_replace(".","",Input::get('valor'))),
             'categoria_id' => Input::get('categoria'),
             'descricao' => Input::get('descricao'),
         );
@@ -137,7 +132,7 @@ class ProdutoController extends Controller {
         }
 
         $produto = ObjectHelper::getQueryStatus($produto,$request->status);
-        
+
         $data['Produtos'] = $produto->get();
         $data['categorias'] = Categoria::all();
         return view('produto/index',$data);

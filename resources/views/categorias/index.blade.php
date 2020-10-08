@@ -1,16 +1,11 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('content')
     <div class="box box-solid box-primary">
         <div class="box-header"><h2>Categorias</h2></div>
     </div>
 
-    <div class="box">
-        <div class="box-header"></div>
-        <div class="box-body"></div>
-        <div class="box-footer"></div>
-    </div>
 
     <div class="box">
         <div class="box-header with-border"></div>
@@ -36,7 +31,7 @@
                     @foreach($Categoriass as $Categorias)
                         <tr>
                             <td>{{$i}} </td>
-                            <td> <a href="{{Request::root()}}/categorias/view/{{$Categorias->id}}" > {{$Categorias->nome }}</a> </td>
+                            <td> <a href="{{Request::root()}}/categorias/{{$Categorias->id}}/view" > {{$Categorias->nome }}</a> </td>
 
                             <td>
                                 <a href="{{Request::root()}}/categorias/{{$Categorias->id }}/change-status" > @if($Categorias->status==0) {{"Ativar"}}  @else {{"Desativar"}} @endif </a>

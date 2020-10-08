@@ -16,8 +16,19 @@ class InsertUser extends Migration
         DB::table('users')->insert(
             array(
                 'id' => '1',
-                'name' => 'Joao Paulo',
-                'email' => 'jpbaterabsb@gmail.com',
+                'name' => 'Kamilla Ramos',
+                'email' => 'kamilla@gmail.com',
+                'password' => '$2y$10$46MvP/LrSxjzIWKl2G5/qOAJ2N5KWvjPfV4HuOIjJUvgEI9nwlmTe',
+                'nivel' => 'ADMIN',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            )
+        );
+        DB::table('users')->insert(
+            array(
+                'id' => '1',
+                'name' => 'Kesia Alves',
+                'email' => 'kesia@gmail.com',
                 'password' => '$2y$10$46MvP/LrSxjzIWKl2G5/qOAJ2N5KWvjPfV4HuOIjJUvgEI9nwlmTe',
                 'nivel' => 'ADMIN',
                 'created_at' => date('Y-m-d H:i:s'),

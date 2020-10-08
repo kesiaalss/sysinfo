@@ -12,11 +12,11 @@
 */
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'CategoriasController@index')->name('home');
 
-Route::get('/perfil', 'UserController@profile')->name('home');
+// Route::get('/perfil', 'UserController@profile')->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(array('prefix' => 'dashboard'), function()
 {

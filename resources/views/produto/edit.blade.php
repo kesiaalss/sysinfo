@@ -1,5 +1,5 @@
-@extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+/@extends('adminlte::page')
+@section('title', 'Sysinfo - Home')
 
 @section('content')
 
@@ -11,7 +11,7 @@
 
     <div class="box">
         <div class="box-header">
-            <h2>Update Produto</h2>
+            <h2>Editar Produto</h2>
         </div>
         <form role="form" method="post" action="/produto/edit" enctype="multipart/form-data">
         <div class="box-body">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label for="valor">Valor:</label>
-                    <input type="text" value="{{$Produto->valor}}" class="form-control money" id="valor" name="valor">
+                    <input type="text" value="<?php echo number_format($Produto->valor, 2, ',', '.') ?>" class="form-control money" id="valor" name="valor">
                 </div>
                 <div class="form-group">
                     <label for="categoria">Categoria:</label>

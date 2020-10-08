@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: joaopaulooliveirasantos
- * Date: 2019-04-08
- * Time: 00:07
- */
 
 namespace App\Http\Controllers;
 

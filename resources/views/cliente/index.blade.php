@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('css/teste.css')}}">
@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="box">
+    <!-- <div class="box">
         <form role="form" method="get" action="cliente/filter" >
             <div class="box-header with-border">
                 <h3>Filtro</h3>
@@ -85,7 +85,7 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
-    </div>
+    </div> -->
 
     <div class="box">
         <div class="box-header"></div>

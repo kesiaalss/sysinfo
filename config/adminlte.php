@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Lano\'s</b>Informática',
+    'logo' => '<b>Sys</b>Info',
 
-    'logo_mini' => '<b>L</b>INF',
+    'logo_mini' => '<b>S</b>NF',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,20 +108,20 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
-        [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'Dashboard',
-            'url'         => '/',
-            'icon'        => 'file',
-//            'label'       => 4,
-//            'label_color' => 'success',
-        ],
-        'ACCOUNT SETTINGS',
+        // 'MAIN NAVIGATION',
+        // [
+        //     'text' => 'Blog',
+        //     'url'  => 'admin/blog',
+        //     'can'  => 'manage-blog',
+        // ],
+        // [
+        //     'text'        => 'Dashboard',
+        //     'url'         => '/',
+        //     'icon'        => 'file',
+        //     'label'       => 4,
+        //     'label_color' => 'success',
+        // ],
+        'MENU',
         [
             'text' => 'Categorias',
             'url'  => '/Categoria',

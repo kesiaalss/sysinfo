@@ -27,7 +27,7 @@
             <tr>
                 <td colspan="4"><center>
                         <h4>
-                            Lano's Informatica
+                            Sysinfo
                         </h4>
                     </center></td>
             </tr>

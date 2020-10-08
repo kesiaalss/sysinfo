@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: joaopaulooliveirasantos
- * Date: 2019-04-07
- * Time: 22:18
- */
 
 namespace App\Http\Controllers;
 
@@ -15,6 +9,11 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Hash;
 class CategoriasController extends Controller {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index()
     {

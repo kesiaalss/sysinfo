@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Lano\'s Informatica - Home')
+@section('title', 'Sysinfo - Home')
 
 
 @section('content')
@@ -17,7 +17,7 @@
 
     <div class="box box-solid box-primary">
         <div class="box-header">
-            <h2>Add OrdemServico</h2>
+            <h2>Criar Ordem de Serviço</h2>
         </div>
         <div class="box-body">
             <form id="cadastro" role="form" method="post" action="/ordem-servico" >
